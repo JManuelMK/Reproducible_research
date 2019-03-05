@@ -8,7 +8,7 @@ This assignment makes use of data from a personal activity monitoring device. Th
 library(dplyr)
 ```
 
-####Load Data
+###Load Data
 ```{r, echo=F}
 setwd('/Users/JManuelMK/Coursera/DataScience_Specialization/Course5_ReproducibleResearch/Week2/')
 ```
@@ -19,12 +19,12 @@ head(data_activity)
 str(data_activity)
 ```
 
-####Set date as date
+###Set date as date
 ```{r, warning=FALSE}
 data_activity$date<-as.Date(data_activity$date,'%Y-%m-%d')
 ```
 
-####Remove NAs
+###Remove NAs
 ```{r}
 index_NA<-is.na(data_activity$steps)
 data_activity<-data_activity[!index_NA,]
@@ -185,5 +185,3 @@ qplot(interval,steps_mean, data = data_activity1_interval,
       main = "") +
       facet_wrap(~ typeday, ncol = 1)
 ```
-
-The activity differs between weekends and weekdays. During the weekend the activity starts later and people are more active. 
