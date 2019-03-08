@@ -10,7 +10,7 @@ library(dplyr)
 
 ###Load Data
 ```{r, echo=F}
-setwd('/Users/JManuelMK/Coursera/DataScience_Specialization/Course5_ReproducibleResearch/Week2/')
+setwd('/Coursera/DataScience_Specialization/Course5_ReproducibleResearch/Week2/')
 ```
 
 ```{r}
